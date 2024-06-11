@@ -1,0 +1,62 @@
+Module 2: Git Assignment - 4
+
+1. Put master.txt on master branch, stage and commit
+2. Create 3 branches: public 1, public 2 and private
+3. Put public1.txt on public 1 branch, stage and commit
+4. Merge public 1 on master branch
+5. Merge public 2 on master branch
+6. Edit master.txt on private branch, stage and commit
+7. Now update branch public 1 and public 2 with new master code in private
+8. Also update new master code on master
+9. Finally update all the code on the private branch
+
+
+Steps:
+  252  mkdir Assignment4
+  253  cd Assignment4
+  254  git init
+  255  touch master.txt
+  256  git add master.txt && git commit -m "First commit master"
+  257  git branch
+  258  git branch public1
+  259  git branch public2
+  260  git branch private
+  261  git branch
+  262  git checkout public1
+  263  nano public1.txt
+  264  git add . && git commit -m "First ver of public1"
+  265  git checkout public2
+  266  nano public2.txt
+  267  git add . && git commit -m "First ver of public2"
+  268  ls
+  269  git checkout master
+  270  ls
+  271  git merge public1
+  272  ls
+  273  git merge public2
+  274  git checkout private
+  275  ls
+  276  cat master.txt
+  277  nano master.txt
+  278  cat master.txt
+  279  git add . && git commit -m "Edited Master version in private"
+  280  git checkout public1
+  281  git merge private
+  282  cat master.txt
+  283  git checkout public2
+  284  cat master.txt
+  285  git merge private
+  286  cat master.txt
+  287  git checkout master
+  288  cat master.txt
+  289  git merge private
+  290  cat master.txt
+  291  git checkout private
+  292  ls
+  293  git merge master
+  294  git merge public1
+  295  git merge public2
+  296  ls
+  297  cat master.txt
+  298  cat public1.txt
+  299  cat public2.txt

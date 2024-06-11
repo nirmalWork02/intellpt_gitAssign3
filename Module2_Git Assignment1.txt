@@ -1,0 +1,27 @@
+Module 2: Git Assignment - 1
+
+a. Create a new folder - 
+b. Put the following files in the folder
+● Code.txt
+● Log.txt
+● Output.txt
+c. Stage the Code.txt and Output.txt files
+d. Commit them
+e. And finally push them to GitHub
+
+Steps:
+ 1. Creating the folder - mkdir assignment1
+ 2. Opening the folder -  cd assignment1
+ 3. creating git repo - git init
+ 4. Creating a file - nano code.txt
+ 5. Creating a file - nano log.txt
+ 6. Creating a file - nano output.txt
+ 7. Listing the files-  ls
+ 8. Checking the git status of the file - git status
+ 9. Adding the file to stage -git add code.txt
+ 10. Adding the file to stage -git add log.txt
+ 11. Adding the file to stage -git add output.txt
+ 12. Checking the git status of the file -git status
+ 13.Commiting the files from stage to local repo with message - git commit -m"files pushed"
+ 14.Setting the connection between local and remote repo - git remote add origin https://github.com/nirmalWork02/Intellipat_devops_asgnt.git
+ 15. pushing the files to the master branch - git push origin master

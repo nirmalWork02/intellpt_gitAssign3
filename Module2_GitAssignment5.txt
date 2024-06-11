@@ -1,0 +1,55 @@
+Module 2: Git Assignment - 5
+
+1. Create a Git Flow workflow architecture on Git
+2. Create all the required branches
+3. Starting from the feature branch, push the branch to the master, following
+the architecture
+4. Push a urgent.txt on master using hotfix
+
+Flow:
+1. Created master branch and then created TestEnv, feature1 and feature2.
+2. In feature1 branch created a file f1.txt and commit.
+3. In feature2 branch created a file f2.txt and commit.
+4. Go to TestEnv branch and merge feature1 and feature2.
+5. Go to master branch and merge TestEnv branch.
+6. Now create a hotfix branch with all master branch files.
+7. Then create a urgent.txt file in hotfix branch and commit.
+8. finally merge the hotfix into master branch.
+
+
+Steps:
+  302  mkdir Assignment5
+  303  cd Assignment5
+  304  ls
+  305  git init
+  306  touch master.txt
+  307  git add master.txt && git commit -m "First Push"
+  308  git branch
+  309  git branch feature1
+  310  git branch feature2
+  311  git branch TestEnv
+  312  git checkout feature1
+  313  ls
+  314  touch f1.txt
+  315  git add f1.txt && git commit -m "feature1 push"
+  316  git checkout feature2
+  317  touch f2.txt
+  318  git add f2.txt && git commit -m "feature2 push"
+  319  git checkout TestEnv
+  320  ls
+  321  git merge feature1
+  322  git merge feature2
+  323  ls
+  324  git checkout master
+  325  ls
+  326  git merge TestEnv
+  327  ls
+  328  git branch hotfix
+  329  git checkout hotfix
+  330  ls
+  331  touch urgent.txt
+  332  git add urgent.txt && git commit -m "hotfix push"
+  333  git checkout master
+  334  ls
+  335  git merge hotfix
+  336  ls

@@ -1,0 +1,43 @@
+Module 2: Git Assignment - 3
+
+1. Create a Git working directory, with the following branches:
+● Develop
+● F1
+● f2
+2. In the master branch, commit main.txt file
+3. Put develop.txt in develop branch, f1.txt and f2.txt in f1 and f2 respectively
+4. Push all these branches to GitHub
+5. On local delete f2 branch
+6. Delete the same branch on GitHub as well
+
+Steps:
+  1. mkdir Assignment3
+  2. cd Assignment3
+  3.  git init
+  4.  touch main.txt
+  5.  git add . 
+  6.  git commit -m "First commit"
+  7.  git branch
+  8.  git branch Develop
+  9.  git checkout Develop
+  10.  touch develop.txt
+  11.  git add . && git commit -m "develop"
+  12.  git branch
+  13.  git checkout master
+  14.  git branch F1
+  15.  git checkout F1
+  16.  touch f1.txt
+  17.  
+  18.  git add . && git commit -m "f1 commit"
+  19.  git checkout master
+  20.  git branch
+  21.  git branch f2
+  22.  git checkout f2
+  23.  touch f2.txt
+  24.  git add . && git commit -m "f2 commit"
+  25.  git remote add origin https://github.com/nirmalWork02/intellpt_Assign3.git
+  26.  git push origin --all
+  27.  git branch
+  28.  git checkout F1
+  29.  git branch -D f2 - Delete the local repo branch
+  30.  git push origin -d f2 - Delete the remote repo branch

@@ -1,0 +1,37 @@
+Module 2: Git Assignment - 2
+
+1. Create a Git working directory with feature1.txt and feature2.txt in the
+master branch
+2. Create 3 branches develop, feature1 and feature2
+3. In develop branch create develop.txt, do not stage or commit it
+4. Stash this file and check out to feature1 branch
+5. Create new.txt file in feature1 branch, stage and commit this file
+6. Checkout to develop, unstash this file and commit
+
+
+Steps:
+ 1. mkdir Assignment2
+ 2. cd Assignment2
+ 3. nano feature1.txt
+ 4. nano feature2.txt
+ 5. git init
+ 6. git add .
+ 7. git commit -m "To master branch"
+ 8. git branch develop
+ 9. git branch feature1
+ 10.git branch feature2
+ 11.checkout develop
+ 12.git checkout develop
+ 13.nano develop.txt
+ 14.ls
+ 15.git stash -u
+ 16.git checkout feature1
+ 17.nano new.txt
+ 18.git add new.txt
+ 19.git commit -m "To feature1 branch"
+ 20.git checkout develop
+ 21.ls
+ 22.git stash pop
+ 23.ls
+ 24.git add develop.txt
+ 25.git commit -m "To develop branch"
